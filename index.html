@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,103 +8,85 @@
 
     <link rel="stylesheet" href="style.css">
 
-    // remixicon cdn
+    <!-- link remixicon cdn -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body{
-            height: 100vh;
-            width: 100vw;
-            background-color: black;
-        }
-
-        nav{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #212121;
-            padding: 5px 5%;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
- 
-
-
-
-
 
     </style>
 
 </head>
-<body>
-    <main>
 
-        <nav>
+<body>
+     <nav>
             <div id="nav_right">
                 <h1> <i class="ri-menu-line"></i></h1>
-                <div id="logo">
-                    <h1><img src="assts/nav/youtube-icon-.png" alt="">YouTube<sup>IN</sup></h1>
-                </div>
+                <img src="assets/nav/youtube-icon--removebg-preview.png" alt="">
             </div>
-            <div id="nav_middle"></div>
-            <div id="nav_left"></div>
-        </nav>
-        <!-- <nav class="flex-div">
-            <div class="nav-left flex-div">
-                <img src="images/menu.png" class="menu-icon">
-                <img src="images/logo.png" class="logo">
-            </div>
-            <div class="nav-middle flex-div">
-                <div class="search-box flex-div">
+            <div id="nav_middle">
+                <div class="search-box">
                     <input type="text" placeholder="Search">
-                    <img src="images/search.png">
+                    <i class="ri-search-line"></i>
                 </div>
-                <img src="images/voice-search.png" class="mic-icon">
-            </div> -->
-            <!-- <div class="nav-right flex-div">
-                <img src="images/upload.png">
-                <img src="images/more.png">
-                <img src="images/notification.png">
-                <img src="images/Jack.png" class="user-icon">
-            </div> -->
+                <h2><i class="ri-mic-fill"></i></h2>
+            </div>
+            <div id="nav_left">
+                <div id="create">
+                    <i class="ri-add-line"></i>
+                    <p>Create</p>
+                </div>
+                <h2><i class="ri-notification-3-line"></i></h2>
+                <div id="login"></div>
+            </div>
         </nav>
+        
+    <main>
 
-        <div class="sidebar">
-            <div class="shortcut-links">
-                <a href=""><i class="fas fa-home"></i><p>Home</p></a>
-                <a href=""><i class="fas fa-explore"></i><p>Explore</p></a>
-                <a href=""><img src="images/subscriptions.png"><p>Subscriptions</p></a>
-                <a href=""><img src="images/library.png"><p>Library</p></a>
-                <a href=""><img src="images/history.png"><p>History</p></a>
-                <a href=""><img src="images/your-video.png"><p>Your Videos</p></a>
-                <a href=""><img src="images/liked-video.png"><p>Liked Video</p></a>
-                <a href=""><img src="images/show-more.png"><p>Show More</p></a>
+       
+
+        <aside>
+            <div class="sidebar">
+                <div class="shortcut-links">
+                    <a href=""><i class="ri-home-4-fill"></i>
+                        <p>Home</p>
+                    </a>
+                    <a href=""><i class="ri-home-4-fill"></i>
+                        <p>Home</p>
+                    </a>
+                    <a href=""><i class="ri-home-4-fill"></i>
+                        <p>Home</p>
+                    </a>
+                </div>
+                <!-- <div class="subscribed-list">
+                    <h3>SUBSCRIBED</h3>
+                    <a href=""><img src="images/Jack.png">
+                        <p>Jack</p>
+                    </a>
+                    <a href=""><img src="images/side-channel-2.png">
+                        <p>CodeHelp</p>
+                    </a>
+                    <a href=""><img src="images/side-channel-3.png">
+                        <p>CodeHelp</p>
+                    </a>
+                    <a href=""><img src="images/side-channel-4.png">
+                        <p>CodeHelp</p>
+                    </a>
+                    <a href=""><img src="images/side-channel-5.png">
+                        <p>CodeHelp</p>
+                    </a>
+                    <a href=""><img src="images/side-channel-6.png">
+                        <p>CodeHelp</p>
+                    </a>
+                </div> -->
             </div>
-            <div class="subscribed-list">
-                <h3>SUBSCRIBED</h3>
-                <a href=""><img src="images/Jack.png"><p>Jack</p></a>
-                <a href=""><img src="images/side-channel-2.png"><p>CodeHelp</p></a>
-                <a href=""><img src="images/side-channel-3.png"><p>CodeHelp</p></a>
-                <a href=""><img src="images/side-channel-4.png"><p>CodeHelp</p></a>
-                <a href=""><img src="images/side-channel-5.png"><p>CodeHelp</p></a>
-                <a href=""><img src="images/side-channel-6.png"><p>CodeHelp</p></a>
-            </div>
-        </div>
+        </aside>
+
+
 
 
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
