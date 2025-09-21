@@ -18,7 +18,7 @@ nav {
   justify-content: space-between;
   background-color: #212121;
   padding: 10px 2%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
 }
@@ -123,11 +123,21 @@ nav #nav_left #login {
   background-position: center;
 }
 
+main {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
 aside {
-  width: 20%;
+  width: 80px;
   height: 100vh;
   background-color: #212121;
   position: fixed;
+  overflow: auto; /* Allows scrolling */
+  scrollbar-width: none; /* Firefox */
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
   top: 0;
   left: 0;
 }
@@ -136,31 +146,87 @@ aside .sidebar {
   height: 100%;
   padding-top: 25%;
   display: flex;
+  color: #fff;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  display: none;
 }
 aside .sidebar .shortcut-links {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+aside .sidebar .shortcut-links #hedding {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  text-align: left;
+  align-self: flex-start;
+  padding: 0px 20px;
 }
 aside .sidebar .shortcut-links a {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 10px 20px;
   color: #fff;
   text-decoration: none;
-  cursor: pointer;
 }
 aside .sidebar .shortcut-links a i {
   margin-right: 15px;
   font-size: 25px;
+  cursor: pointer;
 }
 aside .sidebar .shortcut-links a p {
   font-size: 15px;
+  cursor: pointer;
+}
+aside .sidebar .shortcut-links a:hover {
+  background-color: #393939;
+  border-radius: 1rem;
+}
+aside .sidebar hr {
+  width: 90%;
+  height: 1px;
+  background-color: #393939;
+  margin: 15px 0;
+}
+aside .sidebar::-webkit-scrollbar {
+  display: none;
+}
+aside #sidebar_main {
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  align-items: center;
+}
+aside #sidebar_main .menu {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 15px;
+}
+aside #sidebar_main .menu i {
+  font-size: 30px;
+  font-weight: 100;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+aside #sidebar_main .menu p {
+  font-size: 0.7rem;
+  font-weight: 200;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+}
+aside #sidebar_main .menu:hover {
+  background-color: #393939;
+  border-radius: 1rem;
 }
