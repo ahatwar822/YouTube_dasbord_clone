@@ -300,9 +300,11 @@ nav {
                     .c_top {
                         width: 100%;
                         height: 245px;
-                        background-color: #fff;
+                        // background-color: #fff;
                         border-radius: 1rem;
-                        overflow: hidden;
+                        // overflow: hidden;
+                        background-size: cover;
+                        background-position: center;
                         transition: transform 0.3s ease;
 
                         &:hover {
@@ -313,15 +315,16 @@ nav {
                     .c_bottom {
                         display: flex;
                         padding: 10px;
-
                         align-items: center;
 
                         .btm_left {
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
-                            background-color: gray;
-                            margin-right: 10px;
+                            // background-color: gray;
+                            margin-right: 15px;
+                            background-size: cover;
+                            background-position: center;
                         }
 
                         .btm_right {
@@ -329,7 +332,6 @@ nav {
 
                             .right_top {
                                 display: flex;
-
                                 justify-content: space-between;
                                 align-items: center;
 
