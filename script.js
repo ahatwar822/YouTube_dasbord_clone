@@ -36,3 +36,4 @@ main.addEventListener("click", function () {
     sidebar.style.display = "flex";
     toggle = 1;
 });
+
